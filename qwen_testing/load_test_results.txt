@@ -1,0 +1,4 @@
+Timestamp: 2026-10-04 10:55:22.177775
+RAM before loading: 5.05 GB
+RAM after loading: 6.21 GB
+Generated text: The capital of France is Paris. The capital of Belgium is Brussels. What
