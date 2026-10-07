@@ -4,9 +4,14 @@ data/
 models/
 tools/llama.cpp/
 gemma_base_model_weights/
+gemma_it_model_weights/
 qwen_testing/__pycache__/
 qwen_testing/*.log
 qwen_testing/*_results.json
 !qwen_testing/baseline_results.json
 !qwen_testing/corrected_*_results.json
 !qwen_testing/reference_bf16_results.json
+gemma_testing/__pycache__/
+gemma_testing/*.log
+gemma_testing/*_results.json
+!gemma_testing/gemma_it_reference_results.json
