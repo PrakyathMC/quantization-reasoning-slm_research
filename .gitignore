@@ -15,3 +15,8 @@ gemma_testing/__pycache__/
 gemma_testing/*.log
 gemma_testing/*_results.json
 !gemma_testing/gemma_it_reference_results.json
+!gemma_testing/gemma_it_q8_0_results.json
+!gemma_testing/gemma_it_q6_k_results.json
+!gemma_testing/gemma_it_q5_k_m_results.json
+!gemma_testing/gemma_it_q4_k_m_results.json
+!gemma_testing/gemma_it_q3_k_m_results.json
