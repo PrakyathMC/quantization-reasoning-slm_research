@@ -1,0 +1,19 @@
+model,precision,bit_width,accuracy,correct,num_examples,avg_latency_sec,peak_process_ram_gb,avg_prompt_tokens_per_sec,avg_generation_tokens_per_sec,model_size_mb,return_code_failures,source_file,accuracy_delta_pp,accuracy_retention_pct,latency_speedup,ram_reduction_pct,size_reduction_pct
+Qwen3-0.6B,BF16,16,54.0000,27,50,29.7200,4.8900,34.2600,11.0500,1439.4261,0,qwen_testing\reference_bf16_results.json,0.0000,100.0000,1.0000,0.0000,0.0000
+Qwen3-0.6B,Q8_0,8,46.0000,23,50,25.5900,4.9500,36.3500,17.4500,767.4729,0,qwen_testing\corrected_q8_0_results.json,-8.0000,85.1852,1.1614,-1.2270,46.6820
+Qwen3-0.6B,Q6_K,6,42.0000,21,50,25.5400,4.9600,42.9500,19.3900,593.8850,0,qwen_testing\corrected_q6_k_results.json,-12.0000,77.7778,1.1637,-1.4315,58.7415
+Qwen3-0.6B,Q5_K_M,5,48.0000,24,50,23.9500,4.9200,43.5700,20.8200,525.8352,0,qwen_testing\corrected_q5_k_m_results.json,-6.0000,88.8889,1.2409,-0.6135,63.4691
+Qwen3-0.6B,Q4_K_M,4,54.0000,27,50,22.5300,5.0600,58.3100,23.9100,461.7884,0,qwen_testing\corrected_q4_k_m_results.json,0.0000,100.0000,1.3191,-3.4765,67.9186
+Qwen3-0.6B,Q3_K_M,3,24.0000,12,50,21.6400,5.0500,61.5500,25.3200,394.8011,0,qwen_testing\corrected_q3_k_m_results.json,-30.0000,44.4444,1.3734,-3.2720,72.5723
+Gemma 3 1B IT,BF16,16,42.0000,21,50,36.8800,2.2700,40.8200,7.3000,1913.6178,0,gemma_testing\gemma_it_reference_results.json,0.0000,100.0000,1.0000,0.0000,0.0000
+Gemma 3 1B IT,Q8_0,8,32.0000,16,50,22.7700,1.3300,40.4300,13.0700,1019.7701,0,gemma_testing\gemma_it_q8_0_results.json,-10.0000,76.1905,1.6197,41.4097,46.7098
+Gemma 3 1B IT,Q6_K,6,36.0000,18,50,22.5900,1.2800,44.5500,13.3500,964.8692,0,gemma_testing\gemma_it_q6_k_results.json,-6.0000,85.7143,1.6326,43.6123,49.5788
+Gemma 3 1B IT,Q5_K_M,5,36.0000,18,50,20.7700,1.1200,34.5300,14.4000,811.9066,0,gemma_testing\gemma_it_q5_k_m_results.json,-6.0000,85.7143,1.7756,50.6608,57.5722
+Gemma 3 1B IT,Q4_K_M,4,44.0000,22,50,19.7800,1.1500,40.1000,14.5200,768.7171,0,gemma_testing\gemma_it_q4_k_m_results.json,2.0000,104.7619,1.8645,49.3392,59.8291
+Gemma 3 1B IT,Q3_K_M,3,40.0000,20,50,16.5400,1.3700,60.6700,17.7700,688.9498,0,gemma_testing\gemma_it_q3_k_m_results.json,-2.0000,95.2381,2.2297,39.6476,63.9975
+Llama 3.2 1B Instruct,BF16,16,34.0000,17,50,59.7100,4.8500,14.5800,4.5700,2364.7265,0,llama_testing\llama_it_reference_results.json,0.0000,100.0000,1.0000,0.0000,0.0000
+Llama 3.2 1B Instruct,Q8_0,8,36.0000,18,50,36.8300,4.8500,19.6400,10.6500,1259.8828,0,llama_testing\llama_it_q8_0_results.json,2.0000,105.8824,1.6212,0.0000,46.7218
+Llama 3.2 1B Instruct,Q6_K,6,38.0000,19,50,30.5500,4.8000,28.3400,13.1400,974.4648,0,llama_testing\llama_it_q6_k_results.json,4.0000,111.7647,1.9545,1.0309,58.7916
+Llama 3.2 1B Instruct,Q5_K_M,5,34.0000,17,50,30.8800,4.8500,27.8600,14.3500,869.2773,0,llama_testing\llama_it_q5_k_m_results.json,0.0000,100.0000,1.9336,0.0000,63.2398
+Llama 3.2 1B Instruct,Q4_K_M,4,32.0000,16,50,26.5700,5.0100,35.7700,16.3100,770.2773,0,llama_testing\llama_it_q4_k_m_results.json,-2.0000,94.1176,2.2473,-3.2990,67.4264
+Llama 3.2 1B Instruct,Q3_K_M,3,20.0000,10,50,26.5000,5.0200,34.2300,16.0100,658.8398,0,llama_testing\llama_it_q3_k_m_results.json,-14.0000,58.8235,2.2532,-3.5052,72.1389

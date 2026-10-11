@@ -25,3 +25,14 @@ gemma_testing/*_results.json
 llama_testing/*.log
 llama_testing/*_results.json
 !llama_testing/llama_it_reference_results.json
+!llama_testing/llama_it_q8_0_results.json
+!llama_testing/llama_it_q6_k_results.json
+!llama_testing/llama_it_q5_k_m_results.json
+!llama_testing/llama_it_q4_k_m_results.json
+!llama_testing/llama_it_q3_k_m_results.json
+analysis/.matplotlib/
+
+# Keep the final paper PDF, but not editable Word drafts or other documents.
+!docs/
+docs/*
+!docs/Research_papaer.pdf

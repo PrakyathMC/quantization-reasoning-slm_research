@@ -1,6 +1,6 @@
 @echo off
 setlocal
-cd /d "%~dp0"
+cd /d "%~dp0.."
 
 set "QUANTIZE=tools\llama.cpp\bin\llama-quantize.exe"
 set "SOURCE=models\llama-3.2-1b-it\gguf_reference\llama-3.2-1b-it-bf16.gguf"

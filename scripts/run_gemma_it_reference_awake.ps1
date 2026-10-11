@@ -1,11 +1,11 @@
 $ErrorActionPreference = 'Stop'
-$root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$log = Join-Path $root 'qwen_testing\reference_bf16.log'
+$root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+$log = Join-Path $root 'gemma_testing\gemma_it_reference.log'
 
 Add-Type @'
 using System;
 using System.Runtime.InteropServices;
-public static class ReferencePowerState {
+public static class GemmaITPowerState {
     [DllImport("kernel32.dll")]
     public static extern uint SetThreadExecutionState(uint flags);
     public static void PreventSleep() { SetThreadExecutionState(0x80000001); }
@@ -14,13 +14,13 @@ public static class ReferencePowerState {
 '@
 
 try {
-    [ReferencePowerState]::PreventSleep()
+    [GemmaITPowerState]::PreventSleep()
     "Started: $(Get-Date -Format o)" | Tee-Object -FilePath $log
-    & cmd.exe /c (Join-Path $root 'evaluate_qwen_reference.bat') 2>&1 | Tee-Object -FilePath $log -Append
+    & cmd.exe /c (Join-Path $root 'run_gemma_it_reference.bat') 2>&1 | Tee-Object -FilePath $log -Append
     $exitCode = $LASTEXITCODE
 }
 finally {
-    [ReferencePowerState]::Restore()
+    [GemmaITPowerState]::Restore()
     "Finished: $(Get-Date -Format o)" | Tee-Object -FilePath $log -Append
 }
 
