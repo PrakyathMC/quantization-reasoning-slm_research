@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-cd /d "%~dp0"
+cd /d "%~dp0.."
 set "PYTHON=venv\Scripts\python.exe"
 set "EVAL=qwen_testing\gguf_eval.py"
 
