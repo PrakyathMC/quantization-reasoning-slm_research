@@ -1,6 +1,7 @@
 venv/
 qwen_base_model_weights/
 data/
+docs/
 models/
 tools/llama.cpp/
 gemma_base_model_weights/
