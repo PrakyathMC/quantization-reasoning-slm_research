@@ -35,4 +35,4 @@ analysis/.matplotlib/
 # Keep the final paper PDF, but not editable Word drafts or other documents.
 !docs/
 docs/*
-!docs/Research_papaer.pdf
+!docs/Prakyath_Chandran_Quantization_Reasoning_SLMs.pdf

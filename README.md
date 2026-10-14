@@ -62,7 +62,7 @@ The results do not show one universal degradation pattern. Quantization substant
 ├── llama_testing/
 │   └── llama_it_*_results.json
 ├── docs/
-│   └── Research_papaer.pdf
+│   └── Prakyath_Chandran_Quantization_Reasoning_SLMs.pdf
 ├── scripts/
 │   ├── quantize_*_all.bat
 │   ├── evaluate_*.bat
@@ -131,7 +131,7 @@ This is a controlled pilot study rather than a definitive benchmark. It uses 50 
 
 ## Paper and analysis outputs
 
-- Paper: [`docs/Research_papaer.pdf`](docs/Research_papaer.pdf)
+- Paper: [`docs/Prakyath_Chandran_Quantization_Reasoning_SLMs.pdf`](docs/Prakyath_Chandran_Quantization_Reasoning_SLMs.pdf)
 - Consolidated results: [`analysis/comparison_summary.csv`](analysis/comparison_summary.csv)
 - Machine-readable results: [`analysis/comparison_summary.json`](analysis/comparison_summary.json)
 - Figures: [`analysis/figures/`](analysis/figures/)
