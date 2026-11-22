@@ -23,6 +23,9 @@
 # Local publication metadata
 publication_metadata.txt
 
+# The second study is maintained in its own repository.
+research_02_speculative_decoding/
+
 # Keep the final paper PDF, but not editable Word drafts or other documents.
 **/docs/*
 !research_01_quantization_reasoning_slms/docs/
