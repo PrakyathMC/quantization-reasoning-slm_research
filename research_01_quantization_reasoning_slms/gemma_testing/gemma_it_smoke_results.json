@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-10-06 23:16:37.666442",
+  "model": "gemma-3-1b-it-bf16.gguf",
+  "runtime": "llama.cpp",
+  "llama_version": "version: 0.5.0-dev (build 11384, commit 0faee5004)\nbuilt with Clang 20.1.8 for Windows x86_64",
+  "precision": "gemma-3-1b-it-bf16",
+  "model_size_bytes": 2006573664,
+  "model_sha256": "73d7a1226eaa4c1de78d63a9ebc67852adf8cd114c600e17d1f226677476a361",
+  "dataset": "D:\\slm_research\\data\\gsm8k_pilot_50.json",
+  "dataset_sha256": "a18a7fa2e3589eb80c20c69eb1e50de38102f049cb71efccba3f80947fc0daa0",
+  "prompt_template": "Solve this GSM8K problem. Give a brief calculation and end with the final numeric answer in the format \\boxed{number}. Use non-thinking mode. /no_think",
+  "decoding": {
+    "max_new_tokens": 256,
+    "temperature": 0,
+    "single_turn": true,
+    "no_display_prompt": true,
+    "simple_io": true
+  },
+  "environment": {
+    "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD",
+    "cpu_count": 8,
+    "ram_total_gb": 6.32
+  },
+  "num_examples": 1,
+  "accuracy": 1.0,
+  "correct": 1,
+  "avg_latency_sec": 29.27,
+  "peak_process_ram_gb": 2.26,
+  "avg_prompt_tokens_per_sec": 39.9,
+  "avg_generation_tokens_per_sec": 6.9,
+  "results": [
+    {
+      "id": 0,
+      "question": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+      "gold": "18",
+      "prediction": "18",
+      "correct": true,
+      "latency_sec": 29.27,
+      "generated_text": "Let $E$ be the number of eggs Janet lays per day. We are given that $E = 16$.\nJanet eats three eggs for breakfast every morning, so she has $16 - 3 = 13$ eggs remaining.\nShe bakes muffins for her friends every day with four eggs, so she uses $4$ eggs.\nThe number of eggs remaining after baking muffins is $13 - 4 = 9$ eggs.\nShe sells the remainder at the farmers' market for $2 per fresh duck egg.\nThe number of eggs she sells is 9.\nThe total amount of money she makes every day is $9 \\times 2 = 18$ dollars.\n\nFinal Answer: The final answer is $\\boxed{18}$",
+      "raw_output_sha256": "6bf70b7ce9e85f57bd8ae2d265c50bcf66ebf5e90863aaa0a38a58880e761068",
+      "prompt_tokens_per_sec": 39.9,
+      "generation_tokens_per_sec": 6.9,
+      "return_code": 0
+    }
+  ]
+}

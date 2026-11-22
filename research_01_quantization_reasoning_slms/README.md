@@ -76,11 +76,12 @@ Large model weights, GGUF files, the virtual environment, raw local data, logs, 
 ## Reproduction overview
 
 The commands below are Windows `cmd.exe` commands and assume the repository is located at `D:\slm_research`.
+Run them from this study directory: `D:\slm_research\research_01_quantization_reasoning_slms`.
 
 ### 1. Create the environment
 
 ```bat
-cd /d D:\slm_research
+cd /d D:\slm_research\research_01_quantization_reasoning_slms
 py -m venv venv
 venv\Scripts\activate
 python -m pip install -r requirements.txt
